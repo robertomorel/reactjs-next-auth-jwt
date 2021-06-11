@@ -1,3 +1,7 @@
+/**
+ * Criando funcionalidade para acesso de páginas para visitantes, ou seja, aquelas pessoas que nção estão logadas
+ * withSSRGuest -> With ServerSide Rendering Guests
+ */
 import { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { parseCookies } from "nookies";
 

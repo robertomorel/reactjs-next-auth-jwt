@@ -1,3 +1,7 @@
+/**
+ * Criando funcionalidade para acesso de páginas para clientes, ou seja, aquelas pessoas que já estão logadas
+ * withSSRAuth -> With ServerSide Rendering Authentication
+ */
 import { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { destroyCookie, parseCookies } from "nookies";
 import decode from 'jwt-decode'

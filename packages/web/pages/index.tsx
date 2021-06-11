@@ -33,7 +33,26 @@ export default function Home() {
   )
 }
 
+//Método que será usado pelo servidor (getServerSideProps)
 export const getServerSideProps = withSSRGuest(async (ctx) => {
+  console.log('Cokkies >>> ', ctx.req.cookies);
+
+  // Comentando o códgo abaixo, pois esta verificação ficará sob resp. da função "withSSRGuest"
+  /*
+  // Desta vez passamos o contexto por param pq estamos acessando pelo serverside
+  const cookies = parseCookies(ctx);
+
+  // Se identificar que já existe token válido, já redireciona para o dashboard
+  if(cookies['nextauth.token']) {
+    return {
+      redirect: {
+        destination: '/dashboard',
+        permanent: false,
+      }
+    }
+  }
+  */
+
   return {
     props: {}
   }

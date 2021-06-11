@@ -28,8 +28,13 @@ export default function Dashboard() {
   )
 }
 
+//Método que será usado pelo servidor (getServerSideProps)
+//Está sendo utilizada a função withSSRAuth
 export const getServerSideProps = withSSRAuth(async (ctx) => {
+  // Mandando o contexto para o setup do APIClient para termos acesso aos cookies
+  // Isto é possível pq estamos rodando pelo lado do servidor
   const apiClient = setupAPIClient(ctx);
+  //Assim, com o /me, temos as informações do Bearer Token
   const response = await apiClient.get('/me');
 
   console.log(response.data)
