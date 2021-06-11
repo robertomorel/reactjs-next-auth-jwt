@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/robertomorel/reactjs-next-auth-jwt/blob/master/assets/auth-jwt.jpeg?raw=true" width="600"/>
+  <img src="https://github.com/robertomorel/reactjs-next-auth-jwt/blob/master/assets/auth-jwt.jpeg?raw=true" width="700"/>
 </div>
 
 <hr />
