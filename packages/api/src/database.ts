@@ -6,14 +6,14 @@ export const users: UsersStore = new Map();
 export const tokens: RefreshTokensStore = new Map();
 
 export function seedUserStore() {
-  users.set('diego@rocketseat.team', {
+  users.set('admin@email.com', {
     password: '123456',
     permissions: ['users.list', 'users.create', 'metrics.list'],
     roles: ['administrator']
   });
 
-  users.set('estagiario@rocketseat.team', {
-    password: '123456',
+  users.set('guest@email.com', {
+    password: '654321',
     permissions: ['users.list', 'metrics.list'],
     roles: ['editor']
   });

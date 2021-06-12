@@ -37,6 +37,31 @@ Routes
 - Context to centralize all auth rules, params, functions
 - Redirecting user depending on the situation: logged in/out, token failure...
 
+#### Acess
+To login as an admin:
+```bash
+#permissions: ['users.list', 'users.create', 'metrics.list']
+#roles: ['administrator']
+
+# Email
+admin@email.com
+
+# Password
+123456
+```
+
+To login as an guest:
+```bash
+#permissions: ['users.list', 'metrics.list']
+#roles: ['editor']
+
+# Email
+guest@email.com
+
+# Password
+654321
+```
+
 ## How to run
 Run the following commands using lerna
 
