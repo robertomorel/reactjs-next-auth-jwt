@@ -37,7 +37,7 @@ Routes
 - Context to centralize all auth rules, params, functions
 - Redirecting user depending on the situation: logged in/out, token failure...
 
-#### Acess
+#### Acess ✒️
 To login as an admin:
 ```bash
 #permissions: ['users.list', 'users.create', 'metrics.list']
