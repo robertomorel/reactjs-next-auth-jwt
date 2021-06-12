@@ -14,6 +14,7 @@ export function Can({ children, permissions, roles }: CanProps) {
     return null;
   }
 
+  // Só retornará o children se o usuário tiver possibilidade de ver o componente
   return (
     <>
       {children}

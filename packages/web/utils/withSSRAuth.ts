@@ -13,6 +13,12 @@ type WithSSRAuthOptions = {
   roles?: string[];
 }
 
+/**
+ * 
+ * @param fn função que busca os dados do serverside rendering
+ * @param options objeto com as permissões e roles do usuário
+ * @returns 
+ */
 export function withSSRAuth<P>(fn: GetServerSideProps<P>, options?: WithSSRAuthOptions) {
   return async (ctx: GetServerSidePropsContext): Promise<GetServerSidePropsResult<P>> => {
     const cookies = parseCookies(ctx);

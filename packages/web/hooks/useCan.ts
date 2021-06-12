@@ -1,3 +1,6 @@
+/**
+ * Hook que vai retornar se o usuário pode ou não pode fazer alguma coisa
+ */
 import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import { validateUserPermissions } from "../utils/validateUserPermissions";

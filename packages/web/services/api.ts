@@ -111,7 +111,7 @@ export function setupAPIClient(ctx = undefined) {
         if (process.browser) {
           // Desloga o usuário quando o erro for 401 (não autorizado)
           signOut()
-        } else {
+        } else { //Se não tiver no browser...
           return Promise.reject(new AuthTokenError())
         }
       }
