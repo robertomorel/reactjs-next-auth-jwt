@@ -50,7 +50,7 @@ admin@email.com
 123456
 ```
 
-To login as an guest:
+To login as a guest:
 ```bash
 #permissions: ['users.list', 'metrics.list']
 #roles: ['editor']
